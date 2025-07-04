@@ -3,7 +3,7 @@ import cv2
 
 st.title("Camera Snapshot Test")
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 ret, frame = cap.read()
 cap.release()
 
