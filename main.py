@@ -13,7 +13,8 @@ run = st.checkbox("Start Monitoring")
 FRAME_WINDOW = st.image([])
 
 if run:
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)  # or try 2
+
     while True:
         ret, frame = cap.read()
         if not ret:
